@@ -1,0 +1,131 @@
+// ===Colors
+// Typography-Colors
+$dark-primary: #303f9f;
+$light-primary: #c5cae9;
+$primary: #3f51bf;
+$icon: #fff;
+$accent: #448aff;
+$divider: #bdbdbd;
+
+// Text-Colors
+$primary-text: #212121;
+$secondary-text: #757575;
+
+// ===FONTS
+$heading: 'Open Sans', sans-serif;
+$paragraphs: 'Montserrat', sans-serif;
+$h1-font: 3rem;
+$h2-font: 2rem;
+$normal-font: 1rem;
+$small-font: 0.5rem;
+
+// ===Margins
+$mar-1: 1rem;
+$mar-2: 2rem;
+$mar-3: 3rem;
+$mar-4: 4rem;
+
+// ===Spacing
+$letter-spacing: 1.2px;
+$line-height: 1.5;
+
+// BASE
+// Remove Margin, Padding, Set box sizing
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $icon;
+}
+a,
+h1,
+h2,
+h3,
+h4 {
+  font-family: $heading;
+  letter-spacing: $letter-spacing;
+  color: $icon;
+}
+
+p {
+  font-family: $paragraphs;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  color: $primary-text;
+}
+
+span {
+  font-family: $paragraphs;
+  color: $icon;
+}
+
+.icon {
+  color: $icon;
+  font-size: $h1-font;
+}
+
+// Make images easier to work with
+img,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+// Page Layout
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: $accent;
+  min-width: 360px;
+  max-width: 1440px;
+}
+
+main {
+  padding: 0 $mar-1;
+  min-width: 360px;
+}
+
+section {
+  padding: $mar-4 0 $mar-2;
+  margin: 2rem 0;
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  max-width: 968px;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+//Scroll Bar
+::-webkit-scrollbar {
+  width: 0.64rem;
+  background-color: $divider;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $dark-primary;
+
+  &:hover {
+    background-color: $primary;
+  }
+}

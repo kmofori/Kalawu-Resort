@@ -1,0 +1,57 @@
+@import '../base';
+@import '../components/mixins';
+
+.accomodation {
+  &__title {
+    @include title-default;
+  }
+
+  &__data {
+    text-align: center;
+    margin-bottom: $mar-2;
+  }
+
+  &__img {
+    height: 100%;
+    transition: 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+      outline: 2px solid goldenrod;
+      outline-offset: -1.9rem;
+    }
+  }
+
+  &__card {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: $mar-1;
+    outline: 2px solid goldenrod;
+    outline-offset: -1rem;
+
+    &:hover {
+      outline-offset: -1rem;
+    }
+  }
+
+  &__card-data {
+    position: absolute;
+    top: 1.5rem;
+    left: 1rem;
+  }
+}
+
+@media (min-width: 568px) {
+  .accomodation {
+    &__container {
+      display: grid;
+      column-gap: 1rem;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    &__card-data-title {
+      font-size: 1rem;
+    }
+  }
+}

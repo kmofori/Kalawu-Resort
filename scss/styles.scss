@@ -1,0 +1,15 @@
+@import '../scss/base';
+
+// Import The Components
+@import 'components/buttons';
+@import 'components/mixins';
+
+// Import The Sections
+@import 'sections/navbar';
+@import 'sections/home';
+@import 'sections/about';
+@import 'sections/accommodations';
+@import 'sections/experience';
+@import 'sections/occasions';
+@import 'sections/contact';
+@import 'sections/footer';

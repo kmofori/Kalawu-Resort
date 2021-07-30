@@ -1,0 +1,30 @@
+@import '../base';
+
+// Hover Effect/Scale Images In About Section
+@mixin hover-effect {
+  transition: 0.5s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+@mixin social-styling {
+  font-size: $h2-font;
+  color: $primary;
+  margin-right: $mar-1;
+
+  :hover {
+    color: $dark-primary;
+  }
+}
+
+@mixin title-default {
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: $mar-1;
+
+  @media (min-width: 1024px) {
+    margin-top: 2.5rem;
+  }
+}

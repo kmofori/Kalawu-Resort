@@ -1,0 +1,46 @@
+@import '../base';
+@import '../components/mixins';
+
+.contact {
+  &__title {
+    @include title-default;
+  }
+
+  &__description {
+    text-align: center;
+    margin-bottom: $mar-1;
+  }
+
+  &__form {
+    max-width: 568px;
+    margin: 0 auto;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 1rem;
+    outline: 1px solid $primary;
+    outline-offset: -0.25rem;
+    border: none;
+    background-color: $light-primary;
+    font-size: $normal-font;
+    margin-bottom: $mar-2;
+    border-radius: 0.25rem;
+    font-family: $paragraphs;
+    color: $secondary-text;
+
+    &::placeholder {
+      font-family: $paragraphs;
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__text {
+    display: block;
+    padding-left: 1rem;
+  }
+}

@@ -1,0 +1,33 @@
+@import '../base';
+@import '../components/mixins';
+
+.experience {
+  &__data {
+    text-align: center;
+    margin-bottom: $mar-2;
+  }
+
+  &__title {
+    @include title-default;
+  }
+}
+
+.video {
+  &__content {
+    position: relative;
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__button {
+    position: absolute;
+    right: 0.5rem;
+    bottom: -2.6rem;
+  }
+}
+@media (min-width: 768px) {
+  .section__description {
+    margin-left: 1rem;
+  }
+}

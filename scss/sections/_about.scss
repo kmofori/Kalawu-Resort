@@ -1,0 +1,41 @@
+@import '../base';
+@import '../components/mixins';
+
+.about {
+  &__title {
+    @include title-default;
+  }
+
+  &__container {
+    row-gap: 3rem;
+  }
+
+  &__data {
+    text-align: center;
+  }
+
+  &__description {
+    margin-bottom: $mar-3;
+  }
+
+  &__img {
+    display: flex;
+    column-gap: 1rem;
+    align-items: center;
+    justify-items: center;
+
+    &-overlay {
+      overflow: hidden;
+    }
+
+    &-one {
+      width: 350rem;
+      @include hover-effect;
+    }
+
+    &-two {
+      width: 200rem;
+      @include hover-effect;
+    }
+  }
+}

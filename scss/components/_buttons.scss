@@ -1,0 +1,40 @@
+@import '../base';
+
+.button {
+  display: inline-block;
+  background-color: $primary;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: 0.7s;
+  text-transform: capitalize;
+
+  &:hover {
+    background-color: $dark-primary;
+  }
+}
+
+// Scroll Up
+.scrollup {
+  position: fixed;
+  display: flex;
+  right: 1.5rem;
+  bottom: -20%;
+  font-size: $h1-font;
+  padding: 0.5rem;
+  transition: 0.4s;
+
+  &__icon {
+    color: $dark-primary;
+    opacity: 0.6;
+
+    &:hover {
+      color: goldenrod;
+      opacity: 1;
+    }
+  }
+}
+
+.show-scroll {
+  bottom: 5rem;
+}
